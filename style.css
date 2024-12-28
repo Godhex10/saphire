@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #F9F9F9;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: "DM Sans", serif;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1B243C;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: "DM Sans", serif;
+}
+
+.navbar a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: "DM Sans", serif;
+}
+
+.navbar a:hover {
+  color: #628DFB;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -30px;
+  padding-right: 50px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  width: 150px;
+  padding: 5px 30px 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #666;
+  pointer-events: none;
+}
+
+.header-btn button {
+  background: linear-gradient(to right, #D573F6, #628DFB);
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-btn button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .header-content {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-content.open {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    padding: 10px 0;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .header-btn {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Ensures the navbar links are centered in desktop view */
+@media (min-width: 768px) {
+  header {
+    justify-content: center; /* Centers all content */
+  }
+
+  .navbar {
+    flex: 1;
+    justify-content: center; /* Center the navbar links */
+    gap: 20px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50px; /* Position logo on the left */
+  }
+
+  .header-btn {
+    position: absolute;
+    right: 20px; /* Position sign in and search on the right */
+  }
+}
+
+.hero {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #F9F9F9;
+    color: #1B243C;
+    font-family: 'Roboto', sans-serif;
+    padding: 135px 0;
+  }
+  
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content {
+    width: 50%;
+  }
+  
+  .hero__title {
+    line-height: 1.1;
+    font-size: 4rem;
+    color: #1B243C;
+    font-family: "Space Grotesk", serif;
+  }
+  
+  .hero__text {
+    margin-block: 2em;
+    line-height: 165%;
+    font-size: 22px;
+    color: #AAAAAA;
+    font-family: "DM Sans", serif;
+    width: 80%;
+  }
+  
+  .hero__btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.75em 2em;
+    background: linear-gradient(to right, #D573F6, #628DFB);;
+    color: #fff;
+    border-radius: 7px;
+  }
+  
+  .hero__btn:hover {
+    opacity: 0.75;
+  }
+  
+  .image-wrapper {
+    width: 40%;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #F1F1F1;
+    border-radius: 1em;
+    text-align: center;
+    padding: 20px;
+    margin-right: 55px;
+  }
+
+  .image-wrapper .text1 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  
+  .image-wrapper img {
+    max-width: 100%;
+    border-radius: 1em;
+  }
+  
+  .image-wrapper-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .image-wrapper-footer div {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .image-wrapper-footer h5 {
+    margin-bottom: 10px;
+    color: #AAAAAA;
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+
+
+  .content-wrapper-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #AAAAAA;
+  }
+  
+  .content-wrapper-footer div {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .content-wrapper-footer h5 {
+    margin-bottom: 10px;
+    color: #1B243C;
+    font-family: "Space Grotesk", serif;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  .clear{
+    clear: both;
+  }
+
+/* General styling for the sponsor section */
+.sponsor {
+    display: flex;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers items vertically if height is larger */
+    gap: 20px; /* Adds space between the divs */
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: -107px;
+}
+
+/* Individual binance div styling */
+.binance {
+    flex: 0 1 auto; /* Allows the divs to shrink and grow */
+    text-align: center;
+    padding: 10px;
+    /* width: 240px; */
+}
+
+.binance img {
+    width: 200px; /* Adjust width of the images */
+    height: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .sponsor {
+        flex-direction: row; /* Stacks divs horizontally */
+    }
+
+    .binance img {
+        width: 120px; /* Slightly smaller images for smaller screens */
+    }
+}
+  
+  @media (max-width: 1180px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero__text {
+        margin-block: 2em;
+        line-height: 165%;
+        font-size: 22px;
+        color: #AAAAAA;
+        font-family: "DM Sans", serif;
+        width: 100%;
+      }
+  
+    .content {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 0px;
+    }
+  
+    .image-wrapper {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .content-wrapper-footer {
+      flex-direction: row;
+    }
+  
+    .content-wrapper-footer div {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: -270px;
+    }
+
+
+    .hero__text {
+        margin-block: 2em;
+        line-height: 165%;
+        font-size: 22px;
+        color: #AAAAAA;
+        font-family: "DM Sans", serif;
+        width: 100%;
+      }
+  
+    .content {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 300px;
+    }
+  
+    .image-wrapper {
+      width: 100%;
+    }
+  
+    .content-wrapper-footer {
+      flex-direction: row;
+    }
+  
+    .content-wrapper-footer div {
+      margin-bottom: 15px;
+    }
+  }
+
+
+
+ /* Market Place Section */
+  .market-place {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .market-place button{
+    width: 250px;
+  }
+
+  .market-place p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 960px; /* Adjust to fit your content */
+  }
+
+  .market-place .view {
+    margin-top: 20px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 7px;
+    width: 120px;
+    height: 45px;
+    color: #AAAAAA;
+    cursor: pointer;
+  }
+
+  .market-place .place {
+    margin: 10px auto;
+  }
+
+  /* Card Styles */
+  .card {
+    width: 400px;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: auto;
+  }
+
+  .card__image-wrapper {
+    width: 100%;
+    height: 400px;
+    background-color: #e5e5e5;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card__content {
+    padding: 16px;
+    text-align: left;
+  }
+
+  .card__title {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333333;
+  }
+
+  .card__creator {
+    font-size: 0.9rem;
+    color: #666666;
+    margin: 8px 0 16px;
+  }
+
+  .creator-name {
+    color: #3498db;
+    font-weight: bold;
+  }
+
+  .card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info__bid,
+  .info__time {
+    text-align: center;
+  }
+
+  .info__bid p,
+  .info__time p {
+    font-size: 0.8rem;
+    color: #666666;
+    margin: 0;
+  }
+
+  .info__bid strong,
+  .info__time strong {
+    font-size: 1rem;
+    color: #333333;
+  }
+
+  .card__creator-image {
+    position: absolute;
+    bottom: 90px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card__creator-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+
+}
