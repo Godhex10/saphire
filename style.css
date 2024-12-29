@@ -507,7 +507,7 @@ nav {
 
 .card-content {
     padding: 15px;
-    margin-left: -200px;
+    margin-left: -235px;
 }
 
 .card-content h3 {
@@ -566,6 +566,12 @@ nav {
   @media (max-width: 600px) {
     .card-content h3 {
       font-size: 1em;
+      margin-left: -15px;
+    }
+
+    .card-content {
+        padding: 15px;
+        margin-left: -200px;
     }
 
     .card-content p {
