@@ -254,6 +254,10 @@ nav {
     justify-content: space-between;
     width: 100%;
   }
+
+  .image-wrapper-footer p{
+    font-size: 14px;
+  }
   
   .image-wrapper-footer div {
     flex: 1;
@@ -737,7 +741,7 @@ nav {
 
   .creator-card-content {
     flex: 1;
-    margin-left: -90px;
+    margin-left: -60px;
   }
 
   .creator-card-content h4 {
