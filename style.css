@@ -880,6 +880,8 @@ footer a{
     justify-content: space-between;
     margin-top: 20px;
     font-size: 14px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Responsive adjustments */
@@ -899,5 +901,7 @@ footer a{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
