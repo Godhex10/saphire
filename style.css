@@ -859,7 +859,8 @@ footer a{
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 10px;
 }
 
 .social-icons a {
