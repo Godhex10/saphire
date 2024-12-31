@@ -543,10 +543,10 @@ nav {
     color: #666;
 }
 
-.creator {
+/* .creator {
     display: flex;
     align-items: center;
-}
+} */
 
 .creator img {
     width: 30px;
@@ -580,5 +580,187 @@ nav {
 
     .card-footer {
       font-size: 0.8em;
+    }
+  }
+
+  .create {
+    text-align: center;
+    padding: 20px;
+    margin-top: 55px;
+  }
+  .create b {
+    font-family: "DM Sans", serif;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #628DFB, #D573F6);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+    background-clip: text; /* For non-WebKit browsers (fallback) */
+    text-fill-color: transparent; /* Makes the text color transparent */
+  }
+
+  .create p{
+    color: #1B243C;
+    font-family: "Space Grotesk", serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+
+  .create-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.create-card {
+    text-align: center;
+    background-color: #d9d9d948;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.create-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.create-card h3 {
+    font-size: 1.5rem;
+    color: #1B243C;
+    margin-bottom: 10px;
+    font-family: "DM Sans", serif;
+}
+
+.create-card p {
+    font-size: 1rem;
+    color: #AAAAAA;
+    font-family: "DM Sans", serif;
+}
+
+.create-buttons{
+    margin-top: 50px;
+}
+
+.create-buttons button{
+    margin-top: 40px;
+    background: transparent;
+    border: 2px solid #1B243C;
+    border-radius: 7px;
+    width: 150px;
+    height: 55px;
+    color: #1B243C;
+    cursor: pointer;
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+}
+
+.create-buttons .view{
+    background: linear-gradient(to right, #D573F6, #628DFB);
+    color: #fff;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .create-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .create-card {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .create-container {
+        justify-content: space-between;
+    }
+}
+
+
+.creator {
+    text-align: center;
+    padding: 20px;
+    margin-top: 55px;
+  }
+  .creator b {
+    font-family: "DM Sans", serif;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(45deg, #628DFB, #D573F6);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    -webkit-text-fill-color: transparent; /* Makes the text color transparent */
+    background-clip: text; /* For non-WebKit browsers (fallback) */
+    text-fill-color: transparent; /* Makes the text color transparent */
+  }
+
+  .creator p{
+    color: #1B243C;
+    font-family: "Space Grotesk", serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+
+  .creator-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+  }
+
+  .creator-card {
+    background: #D9D9D947;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .creator-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .creator-card-content {
+    flex: 1;
+    margin-left: -90px;
+  }
+
+  .creator-card-content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #1B243C;
+    font-family: "Space Grotesk", serif;
+  }
+
+  .creator-card-content p {
+    font-size: 16px;
+    color: #1B243C;
+    font-family: "Space Grotesk", serif;
+  }
+
+  .creator-card .dots {
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .creator-card-container {
+      grid-template-columns: 1fr;
     }
   }
